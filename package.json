@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-vue-a11y",
+  "name": "@mindshift/eslint-plugin-vue-a11y",
   "version": "0.0.31",
   "description": "Static AST checker for accessibility rules on elements in .vue",
   "keywords": [
@@ -10,21 +10,17 @@
     "a11y",
     "accessibility"
   ],
-  "author": "maranran",
+  "author": "Mindshift_OTC",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha \"tests/lib/**/*.js\" --reporter dot",
     "lint": "eslint ."
   },
-  "homepage": "https://github.com/maranran/eslint-plugin-vue-a11y#readme",
   "files": [
     "lib"
   ],
-  "bugs": {
-    "url": "https://github.com/maranran/eslint-plugin-vue-a11y/issues"
-  },
-  "engines": {
-    "node": ">=4"
+  "publishConfig": {
+    "registry": "https://www.secrz.de/nexus/content/repositories/ecom-npms/"
   },
   "dependencies": {
     "aria-query": "^0.7.1",
@@ -43,5 +39,10 @@
   "peerDependencies": {
     "eslint": "^3 || ^4 || ^5"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  }
 }
